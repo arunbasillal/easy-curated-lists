@@ -32,7 +32,7 @@ function ecl_easycuratedlists_callback( $atts ) {
 	
 	$curated_list .= '<ul class="easycuratedlists">';
 	
-	$ids = str_replace(' ', '', $atts['id']); // remove white spaces
+	$ids = str_replace( ' ', '', $atts['id'] ); // remove spaces
 	$ids = explode( ',', $ids ); // convert string to array
 	
 	foreach( $ids as $id ) {

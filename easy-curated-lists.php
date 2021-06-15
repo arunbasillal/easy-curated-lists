@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Easy Curated Lists
- * Plugin URI: https://github.com/arunbasillal/WordPress-Starter-Plugin
- * Description: 
+ * Plugin URI: https://github.com/arunbasillal/easy-curated-lists
+ * Description: Display a curated list of posts, pages, products, or any post type using shortcode [easycuratedlists id='1,12,25'].
  * Author: Arun Basil Lal
  * Author URI: https://millionclues.com
  * Version: 1.0
