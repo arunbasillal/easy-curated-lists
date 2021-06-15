@@ -1,44 +1,51 @@
 === Easy Curated Lists ===
 Contributors: arunbasillal
 Donate link: http://millionclues.com/donate/
-Tags: add, some, tags
-Requires at least: 2.0
-Tested up to: 4.8.1
+Tags: knowledgebase, popular-posts, recent-posts, curated-list
+Requires at least: 2.7
+Tested up to: 5.8-beta1
 Requires PHP: 5.5
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-REMOVE ME: Validate using: https://wordpress.org/plugins/about/validator/
-
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+Display a curated list of posts, pages, products, or any post type using a shortcode. 
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+Easy Curated Lists plugin lets you easily display a hand-selected list of posts, pages, products or any post type using a shortcode. 
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+To create a curated list, simply grab the ID's of the posts, pages or products and then use the shortcode **[easycuratedlists]** in the following format.
 
-A few notes about the sections above:
+`[easycuratedlists id='1,12,25']`
 
-*   "Contributors" is a comma separated list of wordpress.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
+You can also optionally specify `h2` or `h3` title for your list by adding it to the shortcode. 
 
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
+`[easycuratedlists id='1,12,25' h2='My Curated List']`
 
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+## Use cases for Easy Curated Lists
+
+* Create a list of posts, pages or products.
+* Add related posts in between articles.
+* Create a knowledge base / documentation.
+* Create an article series that is meant to be read in order.
+* Create a getting started page with links to popular articles for new readers of your website.
+* Create a list of articles to display in a widget on the sidebar or footer.
+
+### Easy Curated Lists Features
+
+* Effortless to use with zero configuration. Just provide the list of ID's and optional heading. 
+* Minimal overhead for your server. 
+* Does not write to the database. Clean install and uninstall. 
+* Should be compatible with most page builders and themes. 
+
+I am excited to know how you are using Easy Curated Lists. Please let me know through the forums. 
+
+### Dev Notes
+
+* The generated list is an unordered HTML list bounded by `ul` tag.
+* A class `easycuratedlists` is added to the list. You can use this to style your curated lists. 
+* GitHub repository: [arunbasillal/easy-curated-lists](https://github.com/arunbasillal/easy-curated-lists)
 
 == Installation ==
 
@@ -46,61 +53,27 @@ To install this plugin:
 
 1. Install the plugin through the WordPress admin interface, or upload the plugin folder to /wp-content/plugins/ using ftp.
 2. Activate the plugin through the 'Plugins' screen in WordPress. On a Multisite you can either network activate it or let users activate it individually. 
-3. Go to WordPress Admin > Settings > 
+3. Add the shortcode in the format `[easycuratedlists id='1,12,25']` to a post, page or a text widget. 
 
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= How to find ID of a post, page or product? =
 
-An answer to that question.
+You can find post, page and product ID from within WordPress admin. Please refer this article for screenshots and more info: [Easily Find ID of Post, Page or Product In WordPress](https://millionclues.com/wordpress-tips/find-post-page-product-id/)
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets 
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` 
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. A curated list in a post
+2. Curated list displayed as a widget
 
 == Changelog ==
 
 = 1.0 =
-* Date: 
+* Date: 15.June.2021
 * First release of the plugin.
 
 == Upgrade Notice ==
 
 = 1.0 =
 * First release of the plugin.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
