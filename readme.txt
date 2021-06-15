@@ -38,6 +38,7 @@ You can also optionally specify `h2` or `h3` title for your list by adding it to
 * Minimal overhead for your server. 
 * Does not write to the database. Clean install and uninstall. 
 * Should be compatible with most page builders and themes. 
+* Mix and match posts, pages, products or any other post type in a single list. 
 
 I am excited to know how you are using Easy Curated Lists. Please let me know through the forums. 
 
