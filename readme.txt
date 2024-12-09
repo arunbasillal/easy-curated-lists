@@ -3,7 +3,7 @@ Contributors: arunbasillal
 Donate link: http://millionclues.com/donate/
 Tags: knowledgebase, popular-posts, recent-posts, curated-list
 Requires at least: 2.7
-Tested up to: 6.2
+Tested up to: 6.7.1
 Requires PHP: 5.5
 Stable tag: 1.0
 License: GPLv2 or later
